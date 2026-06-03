@@ -14,8 +14,10 @@ claude/
 ## Install (recreate symlinks on a new machine)
 
 ```bash
-./install.sh
+git clone https://github.com/msemsem79/claude_dotfiles.git ~/dotfiles && ~/dotfiles/install.sh
 ```
+
+On a new machine: `git clone … ~/dotfiles && ~/dotfiles/install.sh` recreates the symlinks into `~/.claude/skills/`.
 
 This symlinks each tracked item back into `$HOME`. The real files live here; `$HOME` only holds links, so edits are version-controlled automatically.
 
