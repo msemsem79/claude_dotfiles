@@ -20,5 +20,6 @@ link() {
 }
 
 link "claude/skills/conclude-session" "$HOME/.claude/skills/conclude-session"
+link "claude/skills/go-next" "$HOME/.claude/skills/go-next"
 
 echo "done."
