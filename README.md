@@ -7,7 +7,8 @@ Version-controlled personal configuration, symlinked into place from `$HOME`.
 ```
 claude/
   skills/
-    conclude-session/   # personal Claude Code skill → ~/.claude/skills/conclude-session
+    go-next/            # session-opening bookend → ~/.claude/skills/go-next
+    conclude-session/   # session-closing bookend → ~/.claude/skills/conclude-session
 ```
 
 ## Install (recreate symlinks on a new machine)
