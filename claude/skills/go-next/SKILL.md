@@ -13,11 +13,12 @@ Standing context to honor: `[[project_rtf_system_map]]`, `[[project_rtf_progress
 
 ## The steps (in order)
 
-### 1. Orient — read the start-of-session context, in priority order
-- The 3 RTF memory files: `project_rtf_system_map` → `project_rtf_progress` → `project_rtf_design_pillars`.
-- Both repos' `CLAUDE.md` (working principles + gotchas).
-- **`ready-to-fly/docs/SESSIONS.md` "Current focus" — authoritative, read first.** (And `travel-id-verify/docs/SESSIONS.md` if the work touches that repo.)
-- Skim the top of `ENHANCEMENTS.md` for deferred `[REQUIRED]` follow-ups.
+### 1. Orient — read the start-of-session context leanly (sections, not whole files)
+Front-loaded reads ride along in **every** later turn this session, so pull only the slice you need. Most orientation context is already injected — don't re-read it.
+- **RTF memory:** the 3 files' summaries are already injected via `MEMORY.md` at session start — rely on those. Deep-read `project_rtf_system_map` / `project_rtf_progress` / `project_rtf_design_pillars` **only** for a detail the summary doesn't carry.
+- **`ready-to-fly/docs/SESSIONS.md` → read the "Current focus" + roadmap** (the file is now lean — current slice, what's-next, and a one-line "Recently shipped" index; ~50 lines). Authoritative, read it first. Deep per-slice history lives in `SESSIONS-archive.md` — do NOT open it unless you're tracing a specific past slice.
+- **`ENHANCEMENTS.md` → read ONLY the top deferred-follow-ups block** (down to the first phase heading) for `[REQUIRED]` items.
+- **`CLAUDE.md` (working principles + gotchas) → only the repo(s) this slice touches.** Same for `travel-id-verify/docs/SESSIONS.md` — only if the work touches tiv.
 
 ### 2. Check the working state of both repos — catch dangling work from a prior session
 Run in the workspace root (`/Users/msamir/Coding/claude-workspace`):
@@ -54,6 +55,7 @@ done
 | You're about to… | Instead |
 |---|---|
 | Start editing right after "go next" | Orient first (step 1); the frontier lives in SESSIONS + memory |
+| Read whole SESSIONS.md / ENHANCEMENTS.md / memory files | Pull sections only (step 1) — front-loaded reads re-bill every later turn |
 | Start new work without checking repo state | Run step 2; finish/commit/push/merge dangling prior work first |
 | Build on a dirty tree or unmerged branch you didn't expect | Surface it to the user; don't silently stack on it |
 | Assume the next slice from memory alone | Confirm against `SESSIONS.md` "Current focus" — it wins |

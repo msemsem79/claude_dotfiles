@@ -21,7 +21,7 @@ Standing context to honor: `[[feedback_two_repo_sync_and_dod]]`, `[[feedback_con
 
 ### 2. Docs — update every applicable file, in BOTH repos when the change is cross-repo
 - **Completion note** `docs/completion-notes/xxx-phaseN-xxx.md` — **ASK the user for the exact filename; never infer it.**
-- **SESSIONS.md** — Current focus / step status; honest verified-vs-unverified; next focus.
+- **SESSIONS.md** — keep it LEAN (go-next reads it every session): "Current focus" holds only the in-flight slice + what's-next/roadmap, honest verified-vs-unverified. When a slice reaches DONE+MERGED, move its full block into `SESSIONS-archive.md` (newest first) and leave a one-liner in the "Recently shipped" index with its completion-note link. Don't let "Current focus" accumulate finished blocks.
 - **VERIFIED.md** — append ONLY what the user actually confirmed (ask first if an update is warranted).
 - **ENHANCEMENTS.md** — deferred follow-ups with `[REQUIRED]` / `[NICE-TO-HAVE]` / `[LOW]` labels.
 - **DECISIONS.md / ADRs** — record non-obvious decisions and any deviation from the plan.
